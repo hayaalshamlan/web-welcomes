@@ -1,6 +1,6 @@
 package com.letcoded.SecureBankSystem.bo.User;
 
-public class UpdateUserRequest {
+public class UpdateUserStatusRequest {
 
     private String status;
 
@@ -11,6 +11,4 @@ public class UpdateUserRequest {
     public void setStatus(String status) {
         this.status = status;
     }
-
-
 }

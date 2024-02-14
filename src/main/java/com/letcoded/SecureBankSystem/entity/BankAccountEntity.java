@@ -3,9 +3,10 @@ package com.letcoded.SecureBankSystem.entity;
 
 import javax.persistence.*;
 
+
 @Entity
 @Table(name = "bank_account")
-public class BamkAccountEntity {
+public class BankAccountEntity {
 
     @Id
     @Column(name = "id", nullable = false)

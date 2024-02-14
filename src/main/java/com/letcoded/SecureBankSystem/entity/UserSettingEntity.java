@@ -6,19 +6,24 @@ import javax.persistence.*;
 
 public class UserSettingEntity {
 
-    @Id
-    @Column(name = "id", nullable = false)
-    @GeneratedValue
-    private Long id;
 
-    private boolean receiveNewsLetter;
+    @Entity
+    @Table(name = "user_settings")
+    public class UserSettingsEntity {
 
-    private String preferredLanguage;
+        @Id
+        @Column(name = "id", nullable = false)
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long id;
+
+        private boolean receiveNewsletter;
+
+        private String preferredLanguage;
 
 
-    @OneToOne
-    @JoinColumn(name = "user_id")
-    private  UserEntity user;
+        @OneToOne
+        @JoinColumn(name = "user_id")
+        private UserEntity user;
 
-
+    }
 }

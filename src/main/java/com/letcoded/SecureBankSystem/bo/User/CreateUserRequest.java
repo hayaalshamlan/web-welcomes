@@ -1,12 +1,11 @@
 package com.letcoded.SecureBankSystem.bo.User;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 
-//@JsonInclude(JsonInclude.Include.NON_NULL)
 public class CreateUserRequest {
     private String name;
     private String email;
     private String phone;
+
     private String status;
 
     public String getStatus() {
@@ -16,7 +15,6 @@ public class CreateUserRequest {
     public void setStatus(String status) {
         this.status = status;
     }
-
 
     public String getName() {
         return name;
@@ -41,6 +39,4 @@ public class CreateUserRequest {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
-
 }

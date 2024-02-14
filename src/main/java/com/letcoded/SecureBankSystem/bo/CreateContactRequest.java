@@ -1,12 +1,10 @@
 package com.letcoded.SecureBankSystem.bo;
 
-public class Contact {
-
-    public static String name;
-    public static String email;
-    public static String phone;
-
-    public static String getName() {
+public class CreateContactRequest {
+    private String name;
+    private String email;
+    private String phone;
+    public String getName() {
         return name;
     }
 
@@ -14,7 +12,7 @@ public class Contact {
         this.name = name;
     }
 
-    public static String getEmail() {
+    public String getEmail() {
         return email;
     }
 
@@ -22,13 +20,11 @@ public class Contact {
         this.email = email;
     }
 
-    public static String getPhone() {
+    public String getPhone() {
         return phone;
     }
 
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
-
 }
